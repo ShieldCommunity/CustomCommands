@@ -9,6 +9,7 @@ import dev.mruniverse.slimelib.loader.BaseSlimeLoader;
 import dev.mruniverse.slimelib.loader.DefaultSlimeLoader;
 import dev.mruniverse.slimelib.logs.SlimeLogger;
 import dev.mruniverse.slimelib.logs.SlimeLogs;
+import org.bstats.bukkit.Metrics;
 import org.bukkit.plugin.java.JavaPlugin;
 
 import java.util.ArrayList;
@@ -70,6 +71,8 @@ public final class MyCustomCommands extends JavaPlugin implements SlimePlugin<Ja
         );
 
         hasPAPI = getServer().getPluginManager().isPluginEnabled("PlaceholderAPI");
+
+        new Metrics(this, 16767);
     }
 
     public boolean hasPlaceholdersAPI() {
