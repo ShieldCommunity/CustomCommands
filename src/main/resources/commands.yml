@@ -1,0 +1,46 @@
+
+# ██████████████████████████████████████████████████████████████████████████████████████████████████████████
+# █▄─▀█▀─▄█▄─█─▄█─▄▄▄─█▄─██─▄█─▄▄▄▄█─▄─▄─█─▄▄─█▄─▀█▀─▄█─▄▄▄─█─▄▄─█▄─▀█▀─▄█▄─▀█▀─▄██▀▄─██▄─▀█▄─▄█▄─▄▄▀█─▄▄▄▄█
+# ██─█▄█─███▄─▄██─███▀██─██─██▄▄▄▄─███─███─██─██─█▄█─██─███▀█─██─██─█▄█─███─█▄█─███─▀─███─█▄▀─███─██─█▄▄▄▄─█
+# █▄▄▄█▄▄▄██▄▄▄██▄▄▄▄▄██▄▄▄▄██▄▄▄▄▄██▄▄▄██▄▄▄▄█▄▄▄█▄▄▄█▄▄▄▄▄█▄▄▄▄█▄▄▄█▄▄▄█▄▄▄█▄▄▄██▄█▄██▄▄▄██▄▄█▄▄▄▄██▄▄▄▄▄█
+#
+# Created by JustJustin
+# v0.1-SNAPSHOT
+#
+# Disable the permission with ""
+#
+# PlaceholderAPI only will replace placeholders when the sender is a player,
+# But if the console uses the command placeholders will not be replaced with values because is not a player.
+#
+# Add a custom permission message adding 'permission-error' to your command config, example:
+# commands:
+#   '0':
+#     command: "example"
+#     permission-error: "&cYou can't use this"
+#     permission: "example.example"
+#     result:
+#       - "&6This is the result!"
+#
+#
+commands:
+  '0':
+    command: "facebook"
+    permission: ""
+    result:
+      - "&3Facebook:&f https://fb.com/test"
+  '1':
+    command: "youtube"
+    result:
+      - "&cYouTube:&f https://yt.com/test"
+  '2':
+    command: "instagram"
+    result:
+      - "&6Instagram:&f https://ig.com/test"
+  '3':
+    command: "twitter"
+    result:
+      - "&bTwitter:&f https://twitter.com/@test"
+  '4':
+    command: "discord"
+    result:
+      - "&5Discord:&f https://discord.gg/test"
