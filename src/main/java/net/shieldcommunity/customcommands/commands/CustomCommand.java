@@ -74,7 +74,7 @@ public class CustomCommand implements SlimeCommand {
         }
     }
 
-    public static String replacePlaceholders(Player player, String message) {
+    public String replacePlaceholders(Player player, String message) {
         return PlaceholderAPI.setPlaceholders(
                 player,
                 message
