@@ -72,7 +72,7 @@ public final class CustomCommands extends JavaPlugin implements SlimePlugin<Java
 
         hasPAPI = getServer().getPluginManager().isPluginEnabled("PlaceholderAPI");
 
-        new Metrics(this, 16767);
+        new Metrics(this, 17996);
     }
 
     public boolean hasPlaceholdersAPI() {
