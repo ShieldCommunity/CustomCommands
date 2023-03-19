@@ -18,23 +18,19 @@ public class PluginCommand implements SlimeCommand {
 
     @Override
     public String getCommand() {
-        return "MyCustomCommands";
+        return "CustomCommands";
     }
 
     @Override
     public void execute(SlimeSource sender, String commandLabel, String[] args) {
-        if (sender.hasPermission("customcommands.reload") || sender.hasPermission("customcommands.admin") || sender.hasPermission("customcommands.*")) {
-            long current = System.currentTimeMillis();
 
-            plugin.reload();
-
-            sender.sendColoredMessage(
-                    "&aPlugin has been reloaded in " + (System.currentTimeMillis() - current) + "ms."
-            );
-        } else {
-            sender.sendColoredMessage(
-                    "&aMyCustomCommands created by JustJustin v" + plugin.getDescription().getVersion()
-            );
+        if (!(sender.hasPermission("customcommands.admin"))) {
+            sender.sendColoredMessage("&cYou don't have permissions for this command.");
+            return;
         }
+
+        plugin.reload();
+
+        sender.sendColoredMessage("&aPlugin has been successfully reloaded");
     }
 }
