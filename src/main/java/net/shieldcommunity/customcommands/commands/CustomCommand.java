@@ -1,8 +1,8 @@
 package net.shieldcommunity.customcommands.commands;
 
+import me.clip.placeholderapi.PlaceholderAPI;
 import net.shieldcommunity.customcommands.SlimeFile;
 import net.shieldcommunity.customcommands.CustomCommands;
-import net.shieldcommunity.customcommands.utils.Placeholders;
 import dev.mruniverse.slimelib.commands.command.Command;
 import dev.mruniverse.slimelib.commands.command.SlimeCommand;
 import dev.mruniverse.slimelib.file.configuration.TextDecoration;
@@ -55,7 +55,7 @@ public class CustomCommand implements SlimeCommand {
                     "commands." + id + ".result"
             )) {
                 sender.sendMessage(
-                        Placeholders.replacePlaceholders(
+                        replacePlaceholders(
                                 player,
                                 message.replace("%player%", sender.getName())
                         )
@@ -72,5 +72,12 @@ public class CustomCommand implements SlimeCommand {
                     message.replace("%player%", sender.getName())
             );
         }
+    }
+
+    public static String replacePlaceholders(Player player, String message) {
+        return PlaceholderAPI.setPlaceholders(
+                player,
+                message
+        );
     }
 }
