@@ -1,6 +1,6 @@
-package dev.justjustin.mycustomcommands.commands;
+package net.shieldcommunity.customcommands.commands;
 
-import dev.justjustin.mycustomcommands.MyCustomCommands;
+import net.shieldcommunity.customcommands.CustomCommands;
 import dev.mruniverse.slimelib.commands.command.Command;
 import dev.mruniverse.slimelib.commands.command.SlimeCommand;
 import dev.mruniverse.slimelib.source.SlimeSource;
@@ -10,9 +10,9 @@ import dev.mruniverse.slimelib.source.SlimeSource;
         shortDescription = "Reload command"
 )
 public class PluginCommand implements SlimeCommand {
-    private final MyCustomCommands plugin;
+    private final CustomCommands plugin;
 
-    public PluginCommand(MyCustomCommands plugin) {
+    public PluginCommand(CustomCommands plugin) {
         this.plugin = plugin;
     }
 
@@ -23,7 +23,7 @@ public class PluginCommand implements SlimeCommand {
 
     @Override
     public void execute(SlimeSource sender, String commandLabel, String[] args) {
-        if (sender.hasPermission("mycustomcommands.reload") || sender.hasPermission("mycustomcommands.admin") || sender.hasPermission("mycustomcommands.*")) {
+        if (sender.hasPermission("customcommands.reload") || sender.hasPermission("customcommands.admin") || sender.hasPermission("customcommands.*")) {
             long current = System.currentTimeMillis();
 
             plugin.reload();

@@ -4,14 +4,14 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>dev.justjustin.socialmedialinks</groupId>
-    <artifactId>MyCustomCommands</artifactId>
+    <groupId>net.shieldcommunity.customcommands</groupId>
+    <artifactId>CustomCommands</artifactId>
     <version>0.1</version>
     <packaging>jar</packaging>
 
-    <name>MyCustomCommands</name>
+    <name>CustomCommands</name>
 
-    <description>Show your social medias using specified commands</description>
+    <description>Utility plugin for custom comma</description>
     <properties>
         <java.version>1.8</java.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -36,7 +36,7 @@
                     <relocations>
                         <relocation>
                             <pattern>org.bstats</pattern>
-                            <shadedPattern>dev.justjustin.mycustomcommands.external.bstats</shadedPattern>
+                            <shadedPattern>net.shieldcommunity.customcommands.external.bstats</shadedPattern>
                         </relocation>
                     </relocations>
                 </configuration>

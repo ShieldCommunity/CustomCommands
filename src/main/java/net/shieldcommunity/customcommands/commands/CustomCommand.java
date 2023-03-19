@@ -1,8 +1,8 @@
-package dev.justjustin.mycustomcommands.commands;
+package net.shieldcommunity.customcommands.commands;
 
-import dev.justjustin.mycustomcommands.SlimeFile;
-import dev.justjustin.mycustomcommands.MyCustomCommands;
-import dev.justjustin.mycustomcommands.utils.Placeholders;
+import net.shieldcommunity.customcommands.SlimeFile;
+import net.shieldcommunity.customcommands.CustomCommands;
+import net.shieldcommunity.customcommands.utils.Placeholders;
 import dev.mruniverse.slimelib.commands.command.Command;
 import dev.mruniverse.slimelib.commands.command.SlimeCommand;
 import dev.mruniverse.slimelib.file.configuration.TextDecoration;
@@ -15,11 +15,11 @@ import org.bukkit.entity.Player;
         description = "A simple social media command"
 )
 public class CustomCommand implements SlimeCommand {
-    private final MyCustomCommands plugin;
+    private final CustomCommands plugin;
     private final String command;
     private final String id;
 
-    public CustomCommand(MyCustomCommands plugin, String id, String defaultCommand) {
+    public CustomCommand(CustomCommands plugin, String id, String defaultCommand) {
         this.command = plugin.getConfigurationHandler(SlimeFile.COMMANDS).getString("commands." + id + ".command", defaultCommand);
         this.plugin = plugin;
         this.id = id;

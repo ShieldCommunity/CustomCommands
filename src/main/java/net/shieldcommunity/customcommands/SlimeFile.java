@@ -1,4 +1,4 @@
-package dev.justjustin.mycustomcommands;
+package net.shieldcommunity.customcommands;
 
 import dev.mruniverse.slimelib.SlimeFiles;
 import dev.mruniverse.slimelib.SlimePlatform;

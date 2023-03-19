@@ -1,4 +1,4 @@
-package dev.justjustin.mycustomcommands.utils;
+package net.shieldcommunity.customcommands.utils;
 
 import me.clip.placeholderapi.PlaceholderAPI;
 import org.bukkit.entity.Player;

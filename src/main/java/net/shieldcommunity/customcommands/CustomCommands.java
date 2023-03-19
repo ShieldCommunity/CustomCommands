@@ -1,8 +1,8 @@
-package dev.justjustin.mycustomcommands;
+package net.shieldcommunity.customcommands;
 
-import dev.justjustin.mycustomcommands.commands.PluginCommand;
-import dev.justjustin.mycustomcommands.commands.CustomCommand;
-import dev.justjustin.mycustomcommands.utils.PluginUtils;
+import net.shieldcommunity.customcommands.commands.PluginCommand;
+import net.shieldcommunity.customcommands.commands.CustomCommand;
+import net.shieldcommunity.customcommands.utils.PluginUtils;
 import dev.mruniverse.slimelib.SlimePlugin;
 import dev.mruniverse.slimelib.SlimePluginInformation;
 import dev.mruniverse.slimelib.loader.BaseSlimeLoader;
@@ -15,7 +15,7 @@ import org.bukkit.plugin.java.JavaPlugin;
 import java.util.ArrayList;
 import java.util.List;
 
-public final class MyCustomCommands extends JavaPlugin implements SlimePlugin<JavaPlugin> {
+public final class CustomCommands extends JavaPlugin implements SlimePlugin<JavaPlugin> {
 
     private final SlimePluginInformation information = new SlimePluginInformation(
             getServerType(),
